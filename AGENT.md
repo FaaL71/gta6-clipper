@@ -2,7 +2,7 @@
 
 ## The clip
 
-`clip.mp4` — 22 seconds, 1080x1920 vertical (9:16), H.264 + AAC, 13.4 MB.
+`clip.mp4` — 22 seconds, 1080x1920 vertical (9:16), H.264 + AAC, 19.3 MB.
 
 Source: Windah Basudara's own GTA VI gameplay — "GTA VI SIAP TAMAT
 100%.... GAMEPLAY #1" (https://www.youtube.com/live/45r3OyaxvFE, streamed
@@ -48,6 +48,29 @@ purple end card. The user rejected it — rightly. v2 fixes all of it:
 > make.fun/bounty/gta6-clipper-01
 
 The stream's own audio (Windah's voice + game audio) runs throughout.
+
+## The cut (v3 — rebuilt after v2 was rejected)
+
+v2 fixed the layout but the user rejected it too — rightly: "Mana
+Windahnya kok gak ada" (where is Windah, he is not there at all). The
+centre-crop that made the gameplay full-bleed also cropped Windah's
+facecam out of the frame, so you only HEARD him — you could not SEE his
+reactions, and the joke did not land. v3 fixes exactly that:
+
+- **Windah is visible.** His facecam sits in the bottom-right corner of
+  the 16:9 stream (region x=1540–1860, y=700–1020). I crop that region
+  and composite it as a picture-in-picture overlay on the vertical clip:
+  360x360 (about one third of the frame width), bottom-right corner
+  (x=690, y=1490), with a clean white border. His face and his voice
+  TOGETHER carry the joke now — you see him laugh and scream while the
+  boat mission plays behind him. Verified on frames at 1, 5, 10, 15 and
+  20 seconds: his face is clearly visible in the PiP in every frame.
+- **Gameplay stays full-bleed.** The centre-crop fill (no black bars,
+  no blur) from v2 is unchanged; the PiP sits on top of it.
+- **Title and pitch do not cover him.** "WINDAH LUPA KATA / SNORKELING!"
+  stays over the action for the first 3 seconds (top of frame) and the
+  3-second make.fun pitch banner stays at the top for the last 3 seconds
+  (19–22s) — neither overlaps the PiP in the bottom-right corner.
 
 ## Upload
 
